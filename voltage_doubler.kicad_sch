@@ -4,6 +4,11 @@
 	(generator_version "8.0")
 	(uuid "463eb72c-905e-465d-a172-cee5677dd50c")
 	(paper "A4")
+	(title_block
+		(title "Voltage doubler")
+		(date "${MANUFACTURING_DATE}")
+		(rev "1.0.0")
+	)
 	(lib_symbols
 		(symbol "163-179PH-EX:163-179PH-EX"
 			(exclude_from_sim no)
@@ -1231,6 +1236,12 @@
 		(uuid "6e2d9dcc-dc08-46ea-970e-aa25938d0e55")
 	)
 	(junction
+		(at 73.66 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8986071-fc37-48be-b6e0-bf89cccfff74")
+	)
+	(junction
 		(at 162.56 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1284,6 +1295,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 83.82) (xy 73.66 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4163b432-41b3-48e8-a61e-a8960db7a115")
+	)
+	(wire
+		(pts
 			(xy 92.71 77.47) (xy 92.71 87.63)
 		)
 		(stroke
@@ -1311,6 +1332,16 @@
 			(type default)
 		)
 		(uuid "4860eb69-c50e-4ca3-a39a-df170fccd661")
+	)
+	(wire
+		(pts
+			(xy 69.85 85.09) (xy 69.85 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b4284c9-a1ed-4cf9-a11e-60519136ce9d")
 	)
 	(wire
 		(pts
@@ -1444,13 +1475,23 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 80.01) (xy 73.66 85.09)
+			(xy 73.66 80.01) (xy 73.66 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f7be59b5-3c55-4c20-9d8a-ef95943f2f22")
+	)
+	(wire
+		(pts
+			(xy 73.66 83.82) (xy 73.66 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd4a904e-cd2d-4505-a25b-5ce50b2ac27a")
 	)
 	(symbol
 		(lib_id "LT1054CP:LT1054CP")
@@ -1879,6 +1920,72 @@
 			(project ""
 				(path "/463eb72c-905e-465d-a172-cee5677dd50c"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 69.85 85.09 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "607b1906-0e30-411e-bb80-de552d780df5")
+		(property "Reference" "#FLG02"
+			(at 69.85 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 69.85 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 69.85 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be599af1-7c6e-4db1-b178-26dbba9b5305")
+		)
+		(instances
+			(project "voltage_doubler"
+				(path "/463eb72c-905e-465d-a172-cee5677dd50c"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
