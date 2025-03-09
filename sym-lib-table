@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LT1054CP")(type "KiCad")(uri "${KIPRJMOD}/libs/symbols/LT1054CP.kicad_sym")(options "")(descr ""))
+  (lib (name "163-179PH-EX")(type "KiCad")(uri "${KIPRJMOD}/libs/symbols/163-179PH-EX.kicad_sym")(options "")(descr ""))
+)
